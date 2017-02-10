@@ -57,7 +57,7 @@ class Application extends Component {
   }
 
   componentDidMount (){
-    //WeChat.registerApp('wxb3bb2cf618808b08')
+    WeChat.registerApp('wxb3bb2cf618808b08');
   }
 
   render() {

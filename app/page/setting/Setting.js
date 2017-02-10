@@ -21,7 +21,7 @@ import {
   Alert
 } from 'react-native';
 import Communications from 'react-native-communications'; //拨打电话
-//import * as WeChat from 'react-native-wechat';
+import * as WeChat from 'react-native-wechat';
 let resolveAssetSource = require('resolveAssetSource');
 import SceneHeader from '../../component/SceneHeader';
 import Button from '../../component/Button';
@@ -163,7 +163,7 @@ export default class Mine extends Component {
       };
     }
     try {
-      //await WeChat.shareToSession(shareData);
+      await WeChat.shareToSession(shareData);
     }
     catch (e) {
       console.log('share text message to time line failed', e);
